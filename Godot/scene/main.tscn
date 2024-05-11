@@ -1,6 +1,6 @@
 [gd_scene load_steps=147 format=3 uid="uid://lgqk7m866o31"]
 
-[ext_resource type="PackedScene" path="res://scene/star.tscn" id="1_1mnoc"]
+[ext_resource type="PackedScene" uid="uid://d215fmj1gdj7l" path="res://scene/star.tscn" id="1_1mnoc"]
 [ext_resource type="Texture2D" uid="uid://cd2mvl2718l4y" path="res://assets/Background.png" id="1_5jlgg"]
 [ext_resource type="Texture2D" uid="uid://dvlswmqohog3a" path="res://assets/scene3tileset/PNG/Tiles_rock/tile11.png" id="4_4veo6"]
 [ext_resource type="Texture2D" uid="uid://v18pqrd5mic0" path="res://assets/scene3tileset/PNG/Tiles_rock/tile1.png" id="4_vjw34"]
@@ -72,8 +72,8 @@
 [ext_resource type="Texture2D" uid="uid://b14sny8pstevd" path="res://assets/scene3tileset/PNG/Details/torch3_4.png" id="69_5cus3"]
 [ext_resource type="Texture2D" uid="uid://c7fbkiyny8y6" path="res://assets/scene3tileset/PNG/Tiles_rock/tile9.png" id="70_olqjj"]
 [ext_resource type="Texture2D" uid="uid://tikjwloypb3" path="res://assets/scene3tileset/PNG/Tiles_rock/tile10.png" id="71_7end7"]
-[ext_resource type="PackedScene" path="res://scene/main_character.tscn" id="72_t7pmv"]
-[ext_resource type="PackedScene" path="res://scene/skeleton.tscn" id="74_dk588"]
+[ext_resource type="PackedScene" uid="uid://bpwuqleh40xo8" path="res://scene/main_character.tscn" id="72_t7pmv"]
+[ext_resource type="PackedScene" uid="uid://c2ajfaci8kpqg" path="res://scene/skeleton.tscn" id="74_dk588"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nuavh"]
 texture = ExtResource("4_vjw34")
