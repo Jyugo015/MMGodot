@@ -1,0 +1,18 @@
+~ ending
+John: Where am I?
+Grim Reaper: This is the place to save your friend.
+John: My friend? Where is my friend?
+Grim Reaper : Right ahead. (pointing to the dark)
+
+- Yes
+	Grim Reaper:  Go ahead, he's waiting for you there.
+	??? : Look closer, John. See the truth.
+	??? : In chasing shadows, we lose ourselves. The truth was the lie.
+- No
+	Grim Reaper: You sure? Then just move forward.
+	???: Wise choice. You saw through the lies and found your peace.
+	???: Acceptance is the path to clarity. Not all games can be won, but understanding the rules—the real game—offers true victory.
+
+
+=> END
+

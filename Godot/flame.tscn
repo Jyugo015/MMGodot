@@ -1,8 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://ci6flqmwwq562"]
+[gd_scene load_steps=18 format=3 uid="uid://ci6flqmwwq562"]
 
-[ext_resource type="Texture2D" uid="uid://chk6s3y1pvshw" path="res://assets/scene1trap1/Fire_Spirit/Flame.png" id="1_7pjei"]
-
-[sub_resource type="GDScript" id="GDScript_ss1y1"]
+[ext_resource type="Texture2D" uid="uid://nr8rj1utrkvf" path="res://assets/scene1trap1/Fire_Spirit/Flame.png" id="1_7pjei"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dfa03"]
 atlas = ExtResource("1_7pjei")
@@ -110,13 +108,13 @@ radius = 24.0
 radius = 24.0208
 
 [node name="Area2D" type="Area2D"]
-script = SubResource("GDScript_ss1y1")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1424, 546)
 sprite_frames = SubResource("SpriteFrames_by2vv")
 autoplay = "default"
 frame_progress = 0.78653
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1425, 556)
@@ -130,4 +128,5 @@ shape = SubResource("CircleShape2D_sgk13")
 debug_color = Color(0.656301, 0.485055, 0.489869, 0.42)
 metadata/_edit_group_ = true
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="top_checker" to="." method="_on_top_checker_body_entered"]
