@@ -5,15 +5,19 @@ extends CharacterBody2D
 
 @export var speed = 340.0
 @export var jump_height = -650.0
-
+@onready var actionable_finder = $ActionableFinder
+#
+#@onready var actionable_finder: Area2D = $ActionableFinder
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @export var attacking = false
 
-func _unhandled_input(event : InputEvent)-> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		DialogueManager.show_example_dialogue_balloon(load("res://dialogue/main.dialogue"),"start")
-		return
+func _unhandled_input(event: InputEvent) -> void:
+		if event.is_action_pressed("ui_accept"):
+			var actionables = actionable_finder.get_overlapping_areas()
+			if actionables.size()>0:
+				actionables[0].action()
+				return
 
 
 func _process(_delta):

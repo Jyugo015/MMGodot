@@ -1,0 +1,83 @@
+[gd_scene load_steps=12 format=3 uid="uid://8ipnp5ds73cf"]
+
+[ext_resource type="Texture2D" uid="uid://bx3m5arher5po" path="res://assets/Mobile - Army of Darkness Defense - Evil Book 2.png" id="1_si5ec"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buhik"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(0, 0, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fs7y"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(165, 0, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm50o"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(0, 144, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrwec"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(165, 144, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yblsf"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(0, 288, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8ocn"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(165, 288, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcf00"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(0, 432, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwv24"]
+atlas = ExtResource("1_si5ec")
+region = Rect2(165, 432, 165, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j8ido"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buhik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fs7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bm50o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrwec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yblsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8ocn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcf00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwv24")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5itey"]
+radius = 32.0
+height = 70.0
+
+[node name="Area2D9" type="Area2D"]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(300, 221)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_j8ido")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(312, 228)
+shape = SubResource("CapsuleShape2D_5itey")

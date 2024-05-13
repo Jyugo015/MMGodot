@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://dyh1te3cv3elp"
+path="res://.godot/imported/Apek.dialogue-9fbd3dd99220bfa985ff6ac85bde94b2.tres"
+
+[deps]
+
+source_file="res://Dialog/Apek.dialogue"
+dest_files=["res://.godot/imported/Apek.dialogue-9fbd3dd99220bfa985ff6ac85bde94b2.tres"]
+
+[params]
+
+defaults=true

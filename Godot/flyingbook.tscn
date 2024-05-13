@@ -1,0 +1,83 @@
+[gd_scene load_steps=12 format=3 uid="uid://elhujhe02pd0"]
+
+[ext_resource type="Texture2D" uid="uid://bx3m5arher5po" path="res://assets/Mobile - Army of Darkness Defense - Evil Book 2.png" id="1_m17jq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uohwx"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(0, 0, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqukm"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(165, 0, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3ftb"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(0, 144, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m6gc"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(165, 144, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5inm"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(0, 288, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28rs5"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(165, 288, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dluf"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(0, 432, 165, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok7ri"]
+atlas = ExtResource("1_m17jq")
+region = Rect2(165, 432, 165, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbdk2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uohwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqukm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3ftb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m6gc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5inm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28rs5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dluf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok7ri")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53lup"]
+size = Vector2(60.5, 46)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(333.635, 301.5)
+scale = Vector2(0.631944, 0.631944)
+sprite_frames = SubResource("SpriteFrames_tbdk2")
+autoplay = "default"
+frame_progress = 0.645765
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(336, 310)
+shape = SubResource("RectangleShape2D_53lup")

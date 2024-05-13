@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scene/skeleton.gd" id="1_jv827"]
 [ext_resource type="Texture2D" uid="uid://l61w40jvml40" path="res://assets/scene3badguy/Skeleton/Skeleton Idle.png" id="2_04ms8"]
+[ext_resource type="PackedScene" uid="uid://bwop8habhnq5g" path="res://scene/BossScene.tscn" id="3_boruh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j3wrv"]
 atlas = ExtResource("2_04ms8")
@@ -91,9 +92,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2yku2"]
 size = Vector2(85.5, 122.125)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwat7"]
-size = Vector2(99.5, 139)
-
 [node name="Skeleton" type="CharacterBody2D"]
 script = ExtResource("1_jv827")
 
@@ -105,13 +103,8 @@ sprite_frames = SubResource("SpriteFrames_m6t4u")
 autoplay = "default"
 frame_progress = 0.76406
 
+[node name="BossScene" parent="Sprite2D" instance=ExtResource("3_boruh")]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(209, 155)
 shape = SubResource("RectangleShape2D_2yku2")
-
-[node name="Hitbox" type="Area2D" parent="."]
-position = Vector2(326, 130)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(-118.75, 25.5)
-shape = SubResource("RectangleShape2D_mwat7")
