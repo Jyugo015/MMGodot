@@ -4,12 +4,14 @@
 [ext_resource type="Script" path="res://scene/scene1.gd" id="1_3dc8w"]
 [ext_resource type="Texture2D" uid="uid://c2yevsjrq54ny" path="res://assets/scene1graveyard_tileset/Tiles/Ground_Tiles.png" id="2_ea3ch"]
 [ext_resource type="Texture2D" uid="uid://nfsrpf8tusqf" path="res://assets/scene1trap_haloween/1 Objects/Web10.png" id="2_qfi6f"]
+
 [ext_resource type="PackedScene" uid="uid://bbsmlbfif0gbw" path="res://bat.tscn" id="3_nx7aw"]
 [ext_resource type="Texture2D" uid="uid://bh7ijxs15d5ej" path="res://assets/scene1trap_haloween/1 Objects/Spider2.png" id="3_ytfuy"]
 [ext_resource type="Texture2D" uid="uid://dg1b4q0kj7i67" path="res://assets/scene1trap_haloween/1 Objects/Signboard5.png" id="4_o78de"]
 [ext_resource type="PackedScene" uid="uid://b40esyd2lxctv" path="res://moving_trap.tscn" id="6_s4qbn"]
 [ext_resource type="PackedScene" uid="uid://dg8t1jxidh1kn" path="res://bat1.tscn" id="6_vpnxl"]
 [ext_resource type="PackedScene" uid="uid://ci6flqmwwq562" path="res://flame.tscn" id="9_lh5i8"]
+
 [ext_resource type="PackedScene" uid="uid://bpwuqleh40xo8" path="res://scene/main_character.tscn" id="11_opb6u"]
 [ext_resource type="PackedScene" uid="uid://elhujhe02pd0" path="res://flyingbook.tscn" id="13_12125"]
 [ext_resource type="Texture2D" uid="uid://dbqwrngfv60tr" path="res://assets/Grim Reaper/Grim Reaper/GrimReaper_Idle.png" id="13_k7ehx"]
@@ -17,6 +19,7 @@
 [ext_resource type="AudioStream" uid="uid://7fgjxiqdu03c" path="res://assets/windsound.mp3" id="14_fch7d"]
 [ext_resource type="PackedScene" uid="uid://dox6v51t4rqnf" path="res://actionable.tscn" id="14_y307v"]
 [ext_resource type="Resource" uid="uid://b51rn13qkw6ma" path="res://Dialog/scene1dialogue.dialogue" id="15_r0dyn"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcfxr"]
 texture = ExtResource("2_ea3ch")

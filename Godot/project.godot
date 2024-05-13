@@ -68,7 +68,9 @@ attack1={
 
 [internationalization]
 
+
 locale/translations_pot_files=PackedStringArray("res://Dialog/dialogScene2Grave.dialogue", "res://Dialog/dialogueScence2Mazai.dialogue", "res://dialogScene2.dialogue", "res://Dialog/main.dialogue", "res://dialogue/dialogScene2Grave.dialogue", "res://dialogue/dialogueScence2Mazai.dialogue", "res://dialogue/main.dialogue", "res://Dialog/scene0.dialogue", "res://Dialog/scene1dialogue.dialogue", "res://Dialog/Apek.dialogue", "res://dialogue/ending.dialogue")
+
 
 [layer_names]
 
